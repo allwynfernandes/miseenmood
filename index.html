@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/howler/2.2.1/howler.min.js" defer></script>
+    <script src="app.js" defer></script>
+    <title>Mise En Mood</title>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>mise en mood</h1>
+        </div>
+        <div class="sideTitle"><span> </span></div>
+            <div class="sound-item" data-sound="chatter" id="btn-snd-chatter" onclick="chatter.stop(); chatter.play()" ><span>CHATTER</span></div>
+            <div class="sound-control">
+                <input type="range" id="vol-chatter" name="vol-chatter" class="styled-slider" 
+                min="0" max="100" value="90" step="10">
+            </div>
+            <div class="sound-item" data-sound="ambiance" id="btn-snd-ambiance"><span>AMBIANCE</span></div>
+            <div class="sound-control">
+                <input type="range" id="vol-ambiance" name="vol-ambiance" class="styled-slider" 
+                min="0" max="100" value="90" step="10">
+            </div>
+            <div class="sound-item" data-sound="trinkets" id="btn-snd-trinkets"><span>TRINKETS</span></div>
+            <div class="sound-control">
+                <input type="range" id="vol-trinkets" name="vol-trinkets" class="styled-slider" 
+                min="0" max="100" value="90" step="10">
+            </div>
+            <div class="sound-item" data-sound="radio" id="btn-snd-radio"><span">RADIO</span></div>
+            <div class="sound-control">
+                <input type="range" id="vol-radio" name="vol-radio" class="styled-slider" 
+                min="0" max="100" value="90" step="10">
+            </div>
+            <div class="footer">
+                <span>Made with love by @allwynpfr</span>
+            </div>
+
+    </div>
+</body>
+</html>
