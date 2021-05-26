@@ -4,10 +4,14 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mise En Mood</title>
+
     <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16.png">
+    <link rel="manifest" href="/favicon/site.webmanifest">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/howler/2.2.1/howler.min.js" defer></script>
     <script src="app.js" defer></script>
-    <title>Mise En Mood</title>
 </head>
 <body>
     <div class="container">
@@ -15,7 +19,7 @@
             <h1>mise en mood</h1>
         </div>
         <div class="sideTitle"><span> </span></div>
-            <div class="sound-item" data-sound="chatter" id="btn-snd-chatter" onclick="chatter.stop(); chatter.play()" ><span>CHATTER</span></div>
+            <div class="sound-item" data-sound="chatter" id="btn-snd-chatter" ><span>CHATTER</span></div>
             <div class="sound-control">
                 <input type="range" id="vol-chatter" name="vol-chatter" class="styled-slider" 
                 min="0" max="100" value="90" step="10">
@@ -33,8 +37,9 @@
             <div class="sound-item" data-sound="radio" id="btn-snd-radio"><span">RADIO</span></div>
             <div class="sound-control">
                 <input type="range" id="vol-radio" name="vol-radio" class="styled-slider" 
-                min="0" max="100" value="90" step="10">
+                min="0" max="100" value="90" step="5">
             </div>
+            
             <div class="footer">
                 <span>Made with love by @allwynpfr</span>
             </div>

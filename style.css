@@ -32,8 +32,12 @@ h3 {
     border: 5px solid white;
     background-color: white;
     
+    
     }
 
+.container div.sound-item:hover{
+      background-color:#ff7b67;
+   }
 
 
 .header {
@@ -89,9 +93,9 @@ h3 {
 /* Styling for Audio playing feature */
 
 .playing {
-    border-color: red;
-    color: red;
-    box-shadow: 0px 0px 10px red;
+  background-color: black;
+  border-color: red;
+  color: red;
 }
 
 
@@ -304,6 +308,8 @@ input[type=range].styled-slider {
   
   
 
+/*generated with Input range slider CSS style generator (version 20201227)
+https://toughengineer.github.io/demo/slider-styler*/
 
 .styled-slider {
     padding: 5vh 0;
