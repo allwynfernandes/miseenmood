@@ -45,6 +45,8 @@
 [Free sounds](https://www.freesfx.co.uk/)
 [Sound Library](https://www.freesoundslibrary.com/)
 
+#### Dark Mode
+https://colorhunt.co/palettes/dark
 
 
 #### Youtube Music

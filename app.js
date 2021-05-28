@@ -9,6 +9,20 @@
 * Make pop up box alert that shows tutorial on how to use.
 */
 
+// Radio Station dictionary
+radioList = {
+    "smooth-jazz" : "http://streaming513.radionomy.com/SmoothJazzZone",
+    "minimal-techno" : "http://amoris.sknt.ru:8000/stream",
+    'classical-relax' : "https://relax.stream.publicradio.org/relax.mp3",
+    "oldies" : "http://hazel.torontocast.com:3050/stream",
+    "international-talk" : "http://streaming510.radionomy.com/2cr-radio",
+    "russian-bible" : "http://amoris.sknt.ru:8026/stream",
+    "lounge-electro" : "http://5.39.86.44:8006/stream-mp3-CoolCoffee_autodj",
+    "ambient-lounge" : "http://streaming512.radionomy.com/Ambiance-Lounge",
+}
+
+
+
 
 // Initiation of sounds
 

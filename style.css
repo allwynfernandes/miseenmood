@@ -1,3 +1,11 @@
+
+/* 
+* Sign off on [[2021-05-28]] :
+* Add styles to info box, to modal and create icon button on top navhead
+* Add dark mode button. Dark mode pallet added at bottom
+* 
+*/
+
 @import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Space+Mono:wght@700&display=swap');
 
 * {
@@ -13,13 +21,9 @@ body {
 
 }
 
-h3 {
-    font-family: 'Space Mono', monospace;
-}
-
 
 .container {
-    width: 100vw;
+  width: 100vw;
     height: 100vh;
     display: grid;
     grid-template-columns: 50px 0.5fr 2fr;
@@ -29,23 +33,31 @@ h3 {
 }
 
 .container div {
-    border: 5px solid white;
-    background-color: white;
-    
-    
-    }
-
-.container div.sound-item:hover{
-      background-color:#ff7b67;
-   }
+  border: 5px solid white;
+  background-color: white;
+  
+  
+}
 
 
-.header {
+h3 {
+    font-family: 'Space Mono', monospace;
+}
+
+
+
+.navhead {
     font-family: 'Krona One', sans-serif;
-    font-size: medium;
+    font-size: 1em;
     grid-column-start: 2;
     grid-column-end: 4;
     text-align: left;
+}
+
+.info {
+  color: green;
+  /* someinfo */
+  
 }
 
 
@@ -100,6 +112,49 @@ h3 {
 
 
 
+
+/* Hover Effects */
+.container div.sound-item:hover{
+  background-color:#ff7b67;
+}
+
+ul li:hover {
+  color: red;
+}
+
+
+
+
+
+/* Radio Section */
+.sound-control.mini-menu {
+  /* background-color: green; */
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  /* align-items: stretch; */
+  justify-content: space-around;
+}
+
+
+ul {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+
+
+
+ul li {
+  list-style-type: None;
+  font-size: 1em;
+  font-family: 'Krona One', sans-serif;
+  padding: 1em;
+  text-align: center;
+
+}
 
 
 

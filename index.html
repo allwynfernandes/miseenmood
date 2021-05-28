@@ -14,9 +14,11 @@
     <script src="app.js" defer></script>
 </head>
 <body>
+    <main>
+
     <div class="container">
-        <div class="header">
-            <h1>mise en mood</h1>
+        <div class="navhead">
+            <header><h1>mise en mood</h1></header>
         </div>
         <div class="sideTitle"><span> </span></div>
             <div class="sound-item" data-sound="chatter" id="btn-snd-chatter" ><span>CHATTER</span></div>
@@ -35,9 +37,15 @@
                 min="0" max="100" value="90" step="10">
             </div>
             <div class="sound-item" data-sound="radio" id="btn-snd-radio"><span">RADIO</span></div>
-            <div class="sound-control">
+            <div class="sound-control mini-menu">
                 <input type="range" id="vol-radio" name="vol-radio" class="styled-slider" 
                 min="0" max="100" value="90" step="5">
+                <ul>
+                    <li>Smooth Jazz</li>
+                    <li>Minimal Electro</li>
+                    <li>Classical Relax</li>
+
+                </ul>
             </div>
             
             <div class="footer">
@@ -45,5 +53,7 @@
             </div>
 
     </div>
+</main>
+
 </body>
 </html>
