@@ -311,8 +311,32 @@ input[type=range].styled-slider {
 /*generated with Input range slider CSS style generator (version 20201227)
 https://toughengineer.github.io/demo/slider-styler*/
 
+
+
 .styled-slider {
     padding: 5vh 0;
     width: 100%;
     height: 100%;
 }
+
+
+
+/*  Dark Mode */
+
+/* 
+body {
+  background: #e84545;
+}
+
+.container div {
+  background-color: #443737;
+  border-color: #443737;
+
+
+}
+
+.styled-slider {
+  background-color: #443737;
+
+}
+ */
