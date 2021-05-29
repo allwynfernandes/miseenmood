@@ -27,26 +27,35 @@ radioList = {
 // Initiation of sounds
 
 const chatter = new Howl({
-    src: ['data/sounds/space/chatter-russian.mp3'],
+    src: ['content/sounds/space/chatter-russian.mp3'],
     html5: true,
     loop: true,
-    volume: 0.9
+    volume: 0.5
 });
 
 
 
 const ambiance = new Howl({
-    src: ['data/sounds/space/ambient-electro.mp3'],
+    src: ['content/sounds/space/ambient-electro.mp3'],
     html5: true,
     loop: true,
-    volume: 0.9
+    volume: 0.5
 })
+
+
+const trinkets = new Howl({
+    src: ['content/sounds/space/ventilation.mp3'],
+    html5: true,
+    loop: true,
+    volume: 0.5
+})
+
 
 const radio = new Howl({
     src: ['http://aliendreams.ddns.net:8000/music'],
     html5: true,
-    loop: true,
-    volume: 0.9,
+    loop: false,
+    volume: 0.5
 })
 
 
@@ -69,6 +78,8 @@ function togglePlayStop(sound, button, volbtn) {
 };
 
 
+// Play Button and Volume control
+
 let btnSndChatter = document.getElementById("btn-snd-chatter");
 btnSndChatter.addEventListener("click", () => {togglePlayStop(chatter, btnSndChatter, 'vol-chatter')});
 
@@ -76,6 +87,11 @@ btnSndChatter.addEventListener("click", () => {togglePlayStop(chatter, btnSndCha
 
 let btnSndAmbiance = document.getElementById("btn-snd-ambiance");
 btnSndAmbiance.addEventListener("click", () => {togglePlayStop(ambiance, btnSndAmbiance, 'vol-ambiance')});
+
+
+
+let btnSndTrinkets = document.getElementById("btn-snd-trinkets");
+btnSndTrinkets.addEventListener("click", () => {togglePlayStop(trinkets, btnSndTrinkets, 'vol-trinkets')});
 
 
 
@@ -90,65 +106,18 @@ btnSndRadio.addEventListener("click", () => {togglePlayStop(radio, btnSndRadio, 
 
 
 
+// Modal Script
 
 
+const openModal = document.getElementById('btn_open_modal');
+const modal_container = document.getElementById('modal_container');
+
+openModal.addEventListener('click', () => {modal_container.style.visibility = 'visible'});
 
 
+window.onclick = function(event) {
+    if (event.target == modal_container) {
+      modal_container.style.visibility = "hidden";
+    }
+}
 
-
-/*
-
-OLD Code below
-
-*/
-
-
-
-
-// const ambiance = new Howl({
-//     src: ['data/sounds/space/ambient-electro.mp3'],
-//     html5: true,
-//     loop: true,
-//     volume: 0.9
-// });
-
-
-
-
-
-// const sound = document.querySelector(".sound-item");
-
-// const btn_chatter = document.getElementById("btn-snd-chatter");
-
-// btn_chatter.addEventListener('click', function(btn_chatter){
-//     btn_chatter.target.classList.toggle('playing')
-//     chatter.play()
-// });
-
-
-// sound.addEventListener('click',  () => {
-//     if (event.target.classList.contains('sound-item')){
-//         let soundToPlay = event.target.dataset.sound;
-//         console.log(soundToPlay)
-//     }
-// })
-
-
-
-
-
-
-// updateVolume = function(sound, value) {
-    //     console.log('before update volume:', sound.volume());
-    //     sound.volume(value);
-    //     console.log('after update volume:', sound.volume());
-// }
-
-
-// function initplayer(){
-    // chatter.volume(chatterVol)
-    // }
-    
-    // window.addEventListener("load", initplayer)
-    // updateVolume(chatter, chatterVol);
-    

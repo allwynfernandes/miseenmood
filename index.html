@@ -17,29 +17,33 @@
     <main>
 
     <div class="container">
+        <div class="sideTitleBox">
+            <span id="btn_open_modal">info</span>
+            <h3>lost spaceship</h3>
+        </div>
         <div class="navhead">
+            <span class="infobox">InfoBox</span>
             <header><h1>mise en mood</h1></header>
         </div>
-        <div class="sideTitle"><span> </span></div>
             <div class="sound-item" data-sound="chatter" id="btn-snd-chatter" ><span>CHATTER</span></div>
             <div class="sound-control">
                 <input type="range" id="vol-chatter" name="vol-chatter" class="styled-slider" 
-                min="0" max="100" value="90" step="10">
+                min="0" max="100" value="50" step="10">
             </div>
             <div class="sound-item" data-sound="ambiance" id="btn-snd-ambiance"><span>AMBIANCE</span></div>
             <div class="sound-control">
                 <input type="range" id="vol-ambiance" name="vol-ambiance" class="styled-slider" 
-                min="0" max="100" value="90" step="10">
+                min="0" max="100" value="50" step="10">
             </div>
             <div class="sound-item" data-sound="trinkets" id="btn-snd-trinkets"><span>TRINKETS</span></div>
             <div class="sound-control">
                 <input type="range" id="vol-trinkets" name="vol-trinkets" class="styled-slider" 
-                min="0" max="100" value="90" step="10">
+                min="0" max="100" value="50" step="10">
             </div>
             <div class="sound-item" data-sound="radio" id="btn-snd-radio"><span">RADIO</span></div>
             <div class="sound-control mini-menu">
                 <input type="range" id="vol-radio" name="vol-radio" class="styled-slider" 
-                min="0" max="100" value="90" step="5">
+                min="0" max="100" value="50" step="5">
                 <ul>
                     <li>Smooth Jazz</li>
                     <li>Minimal Electro</li>
@@ -49,11 +53,32 @@
             </div>
             
             <div class="footer">
-                <span>Made with ❤️ by <a href="https://twitter.com/@allwynpfr", target="_blank">@allwynpfr</a></span>
+                <span>Made with ❤️ by <a href="https://t.me/wynio", target="_blank">@allwyn</a></span>
             </div>
 
     </div>
-</main>
 
+    <div class="modal-container" id="modal_container">
+        <div class="modal">
+            <h2>How to use this shit-</h2>
+            <ul>
+                <li>Click the sound names to <strong>Play/Stop</strong> that sound</li>
+                <li>Sliders control the <strong>volume</strong> for each sound</li>
+                <li>Click outside this box to exit this screen</li>
+                <br>
+                <p> <strong>Also:</strong><br> Radio takes about 10 seconds to fully load</p>
+                <p>For suggestions, tips, kicks, hit me up <a href="https://t.me/wynio" target="_blank">here</a></p>
+            </ul>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+</main>
 </body>
 </html>
